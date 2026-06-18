@@ -1,0 +1,212 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* NAVBAR */
+.navbar{
+    background:#a2007e;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+.nav-links li{
+    margin-left:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#ffd700;
+}
+
+/* HERO SECTION */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background-image: url('../images/herobg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #ffffff; /* Makes the text white */
+    
+    /* Layered glow effect */
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8),   /* Bright core */
+        0 0 15px rgba(255, 255, 255, 0.4),  /* Mid glow */
+        0 0 25px rgba(0, 64, 128, 0.6);     /* Matches your theme button blue (#004080) */
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); /* Soft dark shadow so white text pops */
+}
+
+
+.btn{
+    background:#004080;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.btn:hover{
+    background:#0066cc;
+}
+
+/* SECTION */
+.section{
+    padding:50px;
+}
+
+/* CAFE CARDS */
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+/* TABLES */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+table th{
+    background:#004080;
+    color:white;
+}
+
+/* FORM */
+.form-container{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:10px;
+}
+
+.total-box{
+    margin-top:20px;
+    padding:15px;
+    background:#eef3ff;
+    font-weight:bold;
+}
+
+/* STATUS BOX */
+.status-box{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.status-item{
+    margin:20px 0;
+    font-size:20px;
+}
+
+/* FOOTER */
+footer{
+    background:#a2007e;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+
+/* UPDATE 11111111111111111111111*/
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}

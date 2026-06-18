@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">UniCafe</div>
+
+</nav>
+
+<section class="section">
+
+    <div class="form-container">
+
+        <h2>Checkout</h2>
+
+        <br>
+
+        <div class="form-group">
+
+            <label>Name</label>
+
+            <input type="text" required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Matric Number</label>
+
+            <input type="text" required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Phone Number</label>
+
+            <input type="text">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Order Method</label>
+
+            <select>
+
+                <option>Pick Up</option>
+
+                <option>Delivery</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Delivery Location</label>
+
+            <select>
+
+                <option>Library</option>
+
+                <option>Faculty Building</option>
+
+                <option>Student Centre</option>
+
+                <option>Residential College</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Pickup Time</label>
+
+            <select>
+
+                <option>10:00 AM</option>
+                <option>10:30 AM</option>
+                <option>11:00 AM</option>
+                <option>11:30 AM</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Payment Method</label>
+
+            <select>
+
+                <option>Cash</option>
+
+                <option>Online Banking</option>
+
+                <option>E-Wallet</option>
+
+            </select>
+
+        </div>
+
+        <button
+        class="btn"
+        onclick="submitOrder()">
+
+        Place Order
+
+        </button>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
