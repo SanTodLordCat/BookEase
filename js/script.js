@@ -62,7 +62,7 @@ const menus =
         {name:"Air Kosong", price:0.50}
     ],
 
-    "Cafe Manga":
+    "Cafe Mangga":
     [
         {name:"Jagung Dessert", price:5},
         {name:"Mee Goreng", price:6},
