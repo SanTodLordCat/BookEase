@@ -79,9 +79,10 @@ const menus =
 
     "Anjung Siswi":
     [
-        {name:"Pasta", price:8},
-        {name:"Sandwich", price:4},
-        {name:"Coffee", price:3}
+        {name:"Nasi Goreng", price:8},
+        {name:"Roti Canai", price:3},
+        {name:"Nasi Ayam Geprek", price:6},
+        {name:"Teh Ais", price:3},
     ],
 
     "Anjung Siswa":
