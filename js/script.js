@@ -46,6 +46,7 @@ window.onload = function()
     loadCafeName();
     displayMenu();
     loadCart();
+    generatePickupTimes();
 }
 
 // UPDATE 11111111111111111111111111111111111
@@ -236,4 +237,42 @@ function removeItem(index)
     );
 
     loadCart();
+}
+
+function generatePickupTimes()
+{
+    const select =
+        document.getElementById("pickupTime");
+
+    if(!select) return;
+
+    const now = new Date();
+
+    let hour = now.getHours();
+    let minute = now.getMinutes();
+
+    minute = Math.ceil(minute / 30) * 30;
+
+    if(minute === 60)
+    {
+        minute = 0;
+        hour++;
+    }
+
+    for(let i = 0; i < 12; i++)
+    {
+        const time =
+            `${hour.toString().padStart(2,'0')}:${minute.toString().padStart(2,'0')}`;
+
+        select.innerHTML +=
+            `<option>${time}</option>`;
+
+        minute += 30;
+
+        if(minute >= 60)
+        {
+            minute = 0;
+            hour++;
+        }
+    }
 }
